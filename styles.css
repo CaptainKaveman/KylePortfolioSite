@@ -38,7 +38,7 @@ button {
     padding: 5px;
     text-align: center;
     box-shadow: .5em .5em .5em 0 darkgray;
-    transition: all 400ms ease;
+    transition: all 400ms;
 }
 
 button:hover,
