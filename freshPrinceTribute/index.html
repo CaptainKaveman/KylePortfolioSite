@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Will Smith | Tribute Page</title>
+
+    <link rel="stylesheet" href="resources/css/main.css">
+</head>
+
+<body>
+    <header>
+        <div class="top-border">
+            <img class="will-header" src="resources/images/will-smith-ayyy.png">
+            <span class="header-name">Will Smith
+                <div class="header-bday">Born: September 25<sup>th</sup> 1968 (age <span id="age"></span> years.)</div>
+            </span>
+        </div>
+                    <script>
+                        let yearBorn = 1968;
+                        let currentYear = new Date().getFullYear();
+                        let currentMonth = new Date().getMonth() + 1;
+                        let currentDay = new Date().getDate();
+                        let currentAge;
+
+                        if (currentMonth <= 9) {
+                        currentAge = currentYear - yearBorn - 1;
+                        	if (currentDay < 25) {
+                            currentAge = currentYear - yearBorn - 1;
+                            } else {
+                              currentAge = currentYear - yearBorn;
+                            }
+                        }
+                        document.getElementById("age").innerHTML = currentAge;
+                    </script>
+    </header>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#awards">Awards</a></li>
+            <li><a href="#funfacts">Fun Facts</a></li>
+        </ul>
+
+    </nav>
+
+    <main>
+        <!-- About the GOAT -->
+        <a id="about"></a>
+        <h1 id="banner">About</h1>
+        <p>
+            <b>Willard Carroll Smith, Jr. - The Fresh Prince</b> 
+        </p>
+
+        <ul>
+            <li>Born in Philadelphia, Pennsylvania</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <!-- Accolades Section -->
+        <a id="awards"></a>
+        <h1 id="banner">Awards</h1>
+        
+        <span class="award-headers">Music</span>    
+        <hr>
+
+        <div>
+            <table>
+                <h4 class="table-top">American Music Awards</h4>
+                <tr>
+                    <th>Year</th>
+                    <th>Nominee/Work</th>
+                    <th>Award</th>
+                </tr>
+                <tr>
+                    <td rowspan="3">1999</td>
+                    <td>Himself</td>
+                    <td>Favorite Soul/R&B Male Artist</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">"Big Willie Style"</td>
+                    <td>Favorite Pop/Rock Album</td>
+                </tr>
+                <tr>
+                    <td>Favorite Soul/R&B Album</td>
+                </tr>
+                <tr>
+                    <td>2000</td>
+                    <td>"Wild Wild West"</td>
+                    <td>Favorite Soundtrack</td>
+                </tr>
+                <tr>
+                    <td>2005</td>
+                    <td>Himself</td>
+                    <td>Favorite Pop/Rock Male Artist</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <h4 class="table-top">Grammy Awards</h4>
+                <tr>
+                    <th>Year</th>
+                    <th>Nominee/Work</th>
+                    <th>Award</th>
+                </tr>
+                <tr>
+                    <td>1989</td>
+                    <td>"Parents Just Don't Understand" (with DJ Jazzy Jeff)</td>
+                    <td>Best Rap Performance</td>
+                </tr>
+                <tr>
+                    <td>1992</td>
+                    <td>"Summertime"</td>
+                    <td>Best Rap Performance by a Group or Duo</td>
+                </tr>
+                <tr>
+                    <td>1998</td>
+                    <td>"Men in Black"</td>
+                    <td rowspan="2">Best Rap Solo Performance</td>
+                </tr>
+                <tr>
+                    <td>1999</td>
+                    <td>"Gettin' Jiggy Wit It"</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <table>
+                <h4 class="table-head">MTV Video Music Awards</h4>
+                <tr>
+                    <th>Year</th>
+                    <th>Nominee/Work</th>
+                    <th>Award</th>
+                </tr>
+                <tr>
+                    <td>1989</td>
+                    <td>"Parents Just Don't Understand" (with DJ Jazzy Jeff)</td>
+                    <td>Best Rap Video</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">1997</td>
+                    <td rowspan="2">"Men in Black"</td>
+                    <td>Best Male Video</td>
+                </tr>
+                <tr>
+                    <td>Best Video from a Film</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">1998</td>
+                    <td>"Just the Two of Us"</td>
+                    <td>Best Male Video</td>
+                </tr>
+                <tr>
+                    <td>"Gettin' Jiggy Wit It"</td>
+                    <td>Best Rap Video</td>
+                </tr>
+                <tr>
+                    <td>1999</td>
+                    <td>"Miami"</td>
+                    <td>Best Male Video</td>
+                </tr>
+            </table>
+        </div>
+        <br>
+        
+        <span class="award-headers">Film</span>
+        <hr>
+        
+    </main>      
+    
+</body>
+
+</html>
