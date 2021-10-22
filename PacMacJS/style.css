@@ -1,0 +1,95 @@
+:root {
+    --bg-color: hsl(240, 74%, 37%);
+    --blinky-color: hsl(0, 100%, 50%);
+    --pinky-color: 	hsl(300, 100%, 86%);
+    --inky-color: hsl(180, 100%, 50%);
+    --clyde-color: hsl(35, 100%, 66%);
+    --scared-color: hsl(240, 74%, 50%);
+    --pac-dot: hsl(0, 0%, 100%);
+    --pwr-pellet: hsl(0, 0%, 100%);
+    --pac-man: hsl(60, 100%, 50%);
+}
+
+html {
+    background-color: hsl(0, 0%, 5%);
+    color: white;
+    text-align: center;
+    font-weight: 800;
+    font-size: 1rem;
+    display: grid;
+    place-content: center;
+    margin-top: 10%;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 560px;
+    height: 560px;
+    border: 5px solid white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.grid div {
+    width: 20px;
+    height: 20px;
+}
+
+.pac-dot {
+    background-color: var(--pac-dot);
+    border: 7px solid black;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+.wall {
+    background-color: var(--bg-color);
+}
+
+.power-pellet {
+    background-color: var(--pwr-pellet);
+    width: 15px;
+    height: 15px;
+    border-radius: 10px;
+}
+
+.blinky {
+    background-color: var(--blinky-color);
+    border: 0px;
+    border-radius: 10px 10px 0 0;
+    transition: all 1ms;
+}
+
+.pinky {
+    background-color: var(--pinky-color);
+    border: 0px;
+    border-radius: 10px 10px 0 0;
+    transition: all 1ms;
+}
+
+.inky {
+    background-color: var(--inky-color);
+    border: 0px;
+    border-radius: 10px 10px 0 0;
+    transition: all 1ms;
+}
+
+.clyde {
+    background-color: var(--clyde-color);
+    border: 0px;
+    border-radius: 10px 10px 0 0;
+    transition: all 1ms;
+}
+
+.scared-ghost {
+    background-color: var(--scared-color);
+    border: 0px;
+    border-radius: 10px 10px 0 0;
+    transition: all 1ms;
+}
+
+.pac-man {
+    background-color: var(--pac-man);
+    border-radius: 10px;
+}
