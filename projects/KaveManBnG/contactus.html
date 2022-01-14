@@ -1,0 +1,276 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Kaveman Bar & Grill - Contact Us</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+			<style type="text/css">	
+				* {
+					box-sizing: border-box;
+				}
+
+				form {
+					width: 100%;
+					background-color: cornsilk;
+					margin: 0 0 0;
+				}
+
+				input {
+					background-color: #d1d0d0;
+					border-color: dimgray;
+					width: 50%;
+					padding: 5px 10px;
+					margin: 8px 0 2px 20%;
+					border-radius: 8px;
+					font-size: 12pt;
+					display: inline-block;
+				}
+
+				::placeholder {
+					color: black;
+				}
+				
+				input[type=submit], input[type=reset] {
+					cursor: pointer;
+					width: 350px;
+					margin: 8px 2px;
+					margin-left: 50%;
+					margin-right: auto;
+					background-color: #d1d0d0;
+					text-align: center;
+					border-radius: 8px;
+				}
+				
+				#grid {
+					display:grid;
+					width: 80%;
+					grid-template-columns: 2fr 2fr;
+				}
+
+				input[type=submit]:hover, input[type=reset]:hover {
+					background-color: darkred;
+					color: #d1d0d0;				
+				}
+
+				input[type=radio], input[type=checkbox] {
+					width: auto;
+					text-align: right;
+					margin: 8px 0 2px;	
+					cursor: pointer;
+				}
+
+				input[type=radio]:hover {
+					background-color: darkred;
+					color: #d1d0d0;
+				}
+
+				input[type=number] {
+					background-color: white;
+					border: 1px solid darkred;
+					width: auto;
+					margin: 8px 2px;
+				}
+
+				button:hover {
+					background-color: darkred; 
+					color: #d1d0d0;
+					cursor: pointer;
+				}
+
+				.passcode {
+					margin-left: 20%;
+					margin-right: 20%;
+					width: auto;
+				}
+
+				select {
+					right: 0;
+					margin-right: 20%;
+					width: 200px;
+					margin: 0 20% 0;
+					padding: 5px 10px;
+					background-color: #d1d0d0;
+					border-radius: 8px;
+					border: 1px solid black;
+				}
+
+				select:hover {
+					background-color: white;
+					border-color: darkred;
+				}
+
+				.required:after {
+					color: darkred;
+					content: " *";
+				}
+
+				.hidden {
+					visibility: collapse;
+				}
+
+				.adjust {
+					margin: 0 20% 0;
+				}
+
+				fieldset {
+					margin: 0 20% 0;
+					width: 63%;
+					
+				}
+
+				legend {
+					background-color: darkred;
+					color: #d1d0d0;
+				}
+
+				input:focus {
+					border: 4px solid darkred;
+				}
+
+				textarea {
+					outline: none;
+					resize: none;
+					border-radius: 10px;
+					padding: 5px 10px;
+					margin: 8px 20% 2px;
+					background-color: #d1d0d0;
+					border-color: dimgray;
+					width:63%;
+					font-size: 12pt;
+				}
+
+				textarea:focus {
+					border: 4px solid darkred;
+				}
+
+			</style>
+	</head>
+
+	<body>
+	
+		<header>
+			<br>
+			<a href="index.html" title="Go to homepage">
+				<img src="images/kavemanlogo2.png" alt="Kaveman Bar & Grill Logo" width="150" height="150">
+			</a>
+				<h1 style="text-align:center;">Contact Us</h1>
+		</header>
+		
+		<nav>
+				
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutus.html">About Us</a></li>
+					<li><a href="history.html">History</a></li>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="contactus.html">Contact Us</a></li>
+					<li><a href="chefbio.html">Our Chefs</a></li>
+					<li><a href="hiring.html">Hiring</a></li>
+				</ul>
+			
+		</nav>
+		
+		<br><br>
+
+		<main>
+		  	<div>
+				<form action="#" method="post" autocomplete="on"><br>	
+					<div><br>
+						<select name="title" id="title">
+							<option value="mr">Mr.</option>
+							<option value="mrs">Mrs.</option>
+							<option value="miss">Miss</option>
+							<option value="ms">Ms.</option>
+							<option value="dr">Dr.</option>
+						</select>
+					</div><br>		
+					<div class="required">
+						<label for="fname"></label>
+						<input type="text" id="fname" name="fname" placeholder="Enter your first name" required>
+					</div>
+					<div class="required">
+						<input type="text" id="lname" name="lname" placeholder="Enter your last name" required>
+						<label for="lname" class="hidden"></label>
+					</div>
+					<div class="required">
+						<label for="email"></label>
+							<input type="email" id="email" name="email" placeholder="Enter your email." required>
+					</div>
+					<div class="required">
+						<label for="phone#"></label>
+							<input type="tel" id="phone#" name="phone#" placeholder="Enter your phone number." required>
+					</div><br>
+					<div>
+							<fieldset>
+								<legend style="margin-left: 20%; font-size: 16px;">Rate your experience:</legend>
+									<div>
+									<input type="radio" id="one" name="service" value="1" style="margin: 0 0 0 20%;">
+									<label for="one" style="padding-right: 10%;">1</label>
+																			
+									<input type="radio" id="two" name="service" value="2">
+									<label for="two" style="padding-right: 10%;">2</label>
+									
+									<input type="radio" id="three" name="service" value="3">
+									<label for="three" style="padding-right: 10%;">3</label>
+									
+									<input type="radio" id="four" name="service" value="4">
+									<label for="four" style="padding-right: 10%;">4</label>
+									
+									<input type="radio" id="five" name="service" value="5">
+									<label for="five" style="padding-right: 10%;">5</label>
+									</div>
+									<div>
+										<label style="font-weight: normal; font-size: 10pt; margin-left: 40%;">1 is the worst -- 5 is the best.</label>
+									</div>
+							</fieldset>
+					</div><br><br>
+					<div>
+						<label for="comment"></label>
+						<textarea id="comment" name="comment" placeholder="Provide feedback here." rows="10" cols="200"></textarea>
+					</div><br><br>
+					<div class="passcode">
+						<h2>Enter your four-digit passcode, then click OK:</h2>
+							<input id="id1" type="number" min="1000" max="9999" required>
+							<button onclick ="myFunction()">OK</button>
+							<p style="font-size: 12px;"><i>Please enter a number between 1000 and 9999.</i></p>
+							<p id="passcode"></p>
+								<script>
+									function myFunction() {
+										var inpObj = document.getElementByld("id1");
+									if (inpObj.checkValidity() == false) {
+										document.getElementByld("passcode").innerHTML =	
+										inpObj.validationMessage;
+									} else {
+										document.getElementByld("passcode").innerHTML = "Passcode Valid";
+									}
+									}
+								</script>
+					</div><br><br>
+					<div class="adjust">
+						<label for="rewards">Signup for our Rewards program!
+							<input type="checkbox" id="rewards" name="rewards">
+						</label>
+					</div><br><br><br>
+					<div id="grid">
+						<div>
+							<input type="reset" value="Reset Form">
+						</div>
+						<div>
+							<input type="submit" value="Submit">
+						</div><br><br>
+					</div>
+				</form>
+			</div>
+		</main>
+		
+		<footer>
+			<p>
+				<a href="index.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="history.html">History</a> | <a href="menu.html">Menu</a> | <a href="contactus.html">Contact Us</a> | <a href="chefbio.html">Our Chefs</a> | <a href="hiring.html">Hiring</a>
+			</p>
+		</footer>
+		
+	</body>
+
+</html>

@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: 75px auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-border {
+    background-color: cornflowerblue;
+    width: 80vw;
+    border-radius: 10px;
+}
+
+.will-header {
+    height: auto;
+    width: 20%;
+    padding-top: 2vw;
+    filter: drop-shadow(5px 0 2px black);
+    vertical-align: middle;
+    margin: auto 10%;
+}
+
+.header-name {
+    display: inline-block;
+    font-weight: 900;
+    font-size: clamp(2rem, 2vw + 1rem, 8rem);
+}
+
+.header-bday {
+    font-size: clamp(.5rem, 1vw, 1rem);
+}
+
+html {
+    background-color: hsl(240 95% 95%);
+    color: black;
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    padding-left: 10%;
+    background-color: lightgray;
+    opacity: .9;
+    overflow: hidden;
+    float: left;
+}
+
+.dropdown {
+    display: inline;
+    float: left;
+}
+
+.dropdown, .dropbutton {
+    border: none;
+    outline: none;
+    font-family: inherit;
+    margin: 0;
+    background-color: inherit;
+    color: blueviolet;
+    font-size: inherit;
+    font-weight: 700;
+}
+
+.dropdown-content {
+    display: none;
+    z-index: 1;
+    position: absolute;
+}
+
+.dropdown-content a {
+    display: block;
+    float: none;
+
+}
+
+.dropdown:hover, .dropdown-content {
+    display: block;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 10px 15px;
+    font-weight: 700;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+#banner {
+    background-color: blueviolet;
+    color: white;
+    width: auto;
+    height: 10%;
+    padding: 20px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+/* Accolades Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td,
+tr {
+    border: 2px solid purple;
+}
+
+.table-head {
+    margin-bottom: .2em;
+}
+
+.award-headers {
+    font-size: 1.5rem;
+    font-weight: 700;
+}

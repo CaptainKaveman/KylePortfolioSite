@@ -1,0 +1,288 @@
+<!doctype html>
+
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Kaveman Bar & Grill - Chefs Bio</title>
+		<link rel="stylesheet" type="text/css" href="styles.css">
+        <style>
+            h2 {
+                margin: 0 20% 0;
+                text-align: left;
+            }
+
+            p.employment {
+                text-align: left;
+                margin: 10px 20% 0;
+                text-indent: 30pt;
+            }
+        </style>
+	</head>
+
+	<body>
+		<header>
+            <br>
+			<a href="index.html" title="Go to homepage">
+				<img src="images/kavemanlogo2.png" alt="Kaveman Bar & Grill Logo" width="150" height="150">
+			</a>
+				<h1>Hiring</h1>
+		</header>
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="aboutus.html">About Us</a></li>
+				<li><a href="history.html">History</a></li>
+				<li><a href="menu.html">Menu</a></li>
+				<li><a href="contactus.html">Contact Us</a></li>
+				<li><a href="chefbio.html">Our Chefs</a></li>
+				<li><a href="hiring.html">Hiring</a></li>
+			</ul>
+		</nav>
+
+        <br><br>
+
+		<main>
+            <!-- Employment paragraph -->
+            <br><br>
+            <h2>Employment</h2>
+            <p class="employment">
+                We welcome you as an applicant for a position at Kaveman Bar & Grill. We are looking for team members that are friendly, attentitive, hard-working, and motivated to join our family. We strive to bring top notch food and service to satisfy the needs of our guests.
+            </p><br>
+            <p class="employment">
+                Please fill out the form below and your application will be considered along with the other applicants. You may or may not be contacted for an interview.
+            </p><br><br>
+            <form action="#" method="post" autocomplete="on">
+        <!-- Contact information table-->
+                <fieldset>
+                    <legend>Contact Infomation</legend>
+                    <div><br>
+                        <label for="name" class="required">Full Name:</label>
+                        <div>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                    </div><br>
+                    <div>
+                        <label for="phone" class="required">Phone Number:</label>
+                        <div>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                        </div>
+                    </div><br>
+                    <div>
+                        <label for="email" class="required">Email:</label>
+                        <div>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div><br>
+                    <div>
+                        <label for="date" class="required">Date of Birth:</label>
+                    </div>
+                    <div>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div>
+
+                    </div>
+                </fieldset>
+                <br>
+            <!-- Requested Job information -->
+                <fieldset>
+                    <legend>Requested Information</legend>
+            <!-- Position drop down selector -->
+                    <div><br>
+                        <label for="position" class="required">What position are you applying for?</label>
+                    </div>
+                    <div>
+                        <select name="position" id="position" required>
+                            <option label=" " style="display: none;"></option>
+                            <option value="server">Server</option>
+                            <option value="greet">Host/Hostess</option>
+                            <option value="bartender">Bartender</option>
+                            <option value="cook">Cook</option>
+                            <option value="runner">Food Runner/Busser</option>
+                            <option value="dishwasher">Dishwasher</option>
+                            <option value="security">Security</option>
+                        </select>
+                    </div><br><br>
+            <!-- Hours per week Radio Buttons -->
+                    <div>
+                        <label class="required">Hours per week available.</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="one" name="hours" value="15-20" required>
+                        <label for="one">15 - 20</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="two" name="hours" value="21-25" required>
+                        <label for="two">21 - 25</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="three" name="hours" value="26-30" required>
+                        <label for="three">26 - 30</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="four" name="hours" value="31-35" required>
+                        <label for="four">31 - 35</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="five" name="hours" value="36-40" required>
+                        <label for="five">36 - 40</label>
+                    </div>
+
+                        <br>
+                        <br>
+            <!-- Days Available Checkbox -->    
+                    <div>
+                        <label class="required">Days available.</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="available1" name="available">
+                        <label for="available1">Sunday</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="available2" name="available">
+                        <label for="available2">Monday</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="available3" name="available">
+                        <label for="available3">Tuesday</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="available4" name="available">
+                        <label for="available4">Wednesday</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="available5" name="available">
+                        <label for="available5">Thursday</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="available6" name="available">
+                        <label for="available6">Friday</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="available7" name="available">
+                        <label for="available7">Saturday</label>
+                    </div><br><br>
+            <!-- Times available during the day-->
+                    <div>
+                        <label class="required">Time(s) available during the day.</label>
+                    </div>
+                    <div>
+                        <div>
+                            <input type="checkbox" id="time1" name="timeavailable">
+                            <label for="time1">Any</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="time2" name="timeavailable">
+                            <label for="time2">9am - 2pm</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="time3" name="timeavailable">
+                            <label for="time3">2pm - 7pm</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="time4" name="timeavailable">
+                            <label for="time4">7pm - 12am</label>
+                        </div>
+                    </div><br><br>
+                    <div>
+                        <label for="restrictions">Physical Restrictions:</label>
+                    </div>
+                    <div>
+						<textarea id="restrictions" name="restrictions" rows="1" cols="50"></textarea>
+                    </div>
+                </fieldset><br>
+            <!-- Employement history and other information -->
+                <fieldset>
+                    <legend>Education History</legend>
+            <!-- High School Education history-->
+                    <div>
+                        <h3>High School Education</h3>
+                    </div>
+                    <div>
+                        <label for ="schoolname" class="required">School Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="schoolname" name="schoolname" required>
+                    </div><br>
+                    <div>
+                        <label for="location" class="required">Location:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="location" name="location" placeholder="City, State" required>
+                    </div><br>
+                    <div>
+                        <label class="required">Did you graduate?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="yes" name="yes">
+                        <label for="yes">Yes</label>
+
+                        <input type="checkbox" id="no" name="no">
+                        <label for="no">No</label>
+
+                        <input type="checkbox" id="enrolled" name="enrolled">
+                        <label for="enrolled">Enrolled</label>
+                    </div><br>
+                <!-- Colleg Education history not required-->
+                    <div>
+                        <h3>College Education</h3>
+                    </div>
+                    <div>
+                        <label for ="cschoolname">School Name:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="cschoolname" name="schoolname">
+                    </div><br>
+                    <div>
+                        <label for="clocation">Location:</label>
+                    </div>
+                    <div>
+                        <input type="text" id="clocation" name="clocation" placeholder="City,State">
+                    </div><br>
+                    <div>
+                        <label>Did you graduate?</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="cyes" name="yes">
+                        <label for="cyes">Yes</label>
+
+                        <input type="checkbox" id="cno" name="no">
+                        <label for="cno">No</label>
+
+                        <input type="checkbox" id="cenrolled" name="enrolled">
+                        <label for="cenrolled">Enrolled</label>
+                    </div><br>
+                </fieldset><br>
+            <!-- Employee Skills -->
+                <fieldset>
+                    <legend>Personal Qualities</legend>
+                    <div><br>
+                        <label for="skills" class="required">What skills and traits do you have that make you uniquely qualified?</label>
+                    </div>
+                    <div>
+                        <textarea id="skills" name="skills" rows="10" cols="50" required></textarea>
+                    </div><br><br>
+                    <div>
+                        <label for="otherinfo" class="required">Anything else you'd like us to know?</label>
+                    </div>
+                    <div>
+                        <textarea id="otherinfo" name="otherinfo" rows="10" cols="50" required></textarea>
+                    </div>
+                </fieldset><br>
+                <div>
+                    <input type="submit" value="Submit">
+                </div><br><br>
+            </form>
+		</main>
+
+		<footer>
+            <p>
+				<a href="index.html">Home</a> | <a href="aboutus.html">About Us</a> | <a href="history.html">History</a> | <a href="menu.html">Menu</a> | <a href="contactus.html">Contact Us</a> | <a href="chefbio.html">Our Chefs</a> | <a href="hiring.html">Hiring</a>
+			</p>
+        </footer>
+
+	</body>
+
+</html>
