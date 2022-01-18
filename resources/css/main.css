@@ -95,7 +95,12 @@ body {
 }
 
 .container {
-	margin: 5.3rem 20%;
+	margin: 5.3rem 30% 0 10%;
+}
+
+.top {
+	height: 5.5rem;
+	width: 100%;
 }
 
 /* Navigation Bar styling */
