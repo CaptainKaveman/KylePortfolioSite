@@ -83,7 +83,7 @@ hr {
 }
 
 .card-pic {
-	background: url(/images/image-equilibrium.jpg) center / cover;
+	background: url(./images/image-equilibrium.jpg) center / cover;
 	border-radius: 10px;
 	margin-bottom: 1rem;
 }
@@ -93,7 +93,7 @@ hr {
 	width: 100%;
 	border-radius: 10px;
 	background-color: var(--primary-clr-cyan-hover);
-	background-image: url(/images/icon-view.svg);
+	background-image: url(./images/icon-view.svg);
 	background-repeat: no-repeat;
 	background-position: center;
 	cursor: pointer;
