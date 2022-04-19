@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
 :root {
 	/* Main color styles */
@@ -11,7 +11,9 @@
 	--nav-font-color: hsl(0, 0%, 30%);
 }
 
-* {
+*,
+*::before,
+*::after {
 	box-sizing: border-box;
 	scroll-behavior: smooth;
 }
@@ -21,7 +23,7 @@ html {
 }
 
 body {
-	font-family: 'Ubuntu', sans-serif;
+	font-family: "Ubuntu", sans-serif;
 	font-size: 1rem;
 	line-height: 1.75rem;
 	font-weight: 300;
@@ -45,11 +47,11 @@ body {
 /* Text Sizing */
 .paragraph-small {
 	margin: 10px 0;
-	font-size: .9rem;
-	line-height: .5rem;
+	font-size: 0.9rem;
+	line-height: 0.5rem;
 }
 
-.paragraph-medium  {
+.paragraph-medium {
 	margin: 10px 0;
 	font-size: 1.25rem;
 	line-height: 1rem;
@@ -95,7 +97,7 @@ body {
 }
 
 .container {
-	margin: 5.3rem 30% 0 10%;
+	margin: 5.3rem 20%;
 }
 
 .top {
@@ -112,7 +114,7 @@ body {
 	position: fixed;
 	background-color: var(--nav-bg-color);
 	-webkit-backdrop-filter: blur(1rem);
-	opacity: .8;
+	opacity: 0.8;
 	backdrop-filter: blur(1rem);
 	z-index: 9999;
 	display: flex;
@@ -149,19 +151,27 @@ ul li a {
 	width: auto;
 }
 
+.work-image > :hover {
+	height: 100%;
+	width: 100%;
+	background-color: black !important;
+	opacity: 0.4;
+	transition: 200ms ease-in-out;
+}
+
 a.invisible-link {
 	display: block;
 	height: 100%;
 }
 
 .work-image.work-1 {
-	background: url(/resources/images/projects/kaveman-barNgrill.png) center / cover;
+	background: url(/resources/images/projects/kaveman-barNgrill.png) center /
+		cover;
 }
 
 .work-image.work-2 {
-	background-image: url(/resources/images/workInProgress.png), url(/resources/images/projects/will-smith-tribute.png);
-	background-size: contain, cover;
-	background-position: center;
+	background: url(/projects/nftPreviewCard/screenshots/screenshot1440.png)
+		center / cover;
 }
 
 .work-image.work-3 {
@@ -169,8 +179,10 @@ a.invisible-link {
 }
 
 .work-image.work-4 {
-	background: radial-gradient(rgba(0, 0, 225, .5), rgba(225, 0, 0, .7));
-	background-size: cover;
+	background-image: url(/resources/images/workInProgress.png),
+		url(/resources/images/projects/will-smith-tribute.png);
+	background-size: contain, cover;
+	background-position: center;
 }
 
 .work-image.work-5 {
