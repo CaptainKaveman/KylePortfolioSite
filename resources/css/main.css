@@ -200,3 +200,46 @@ footer ul {
 	display: flex;
 	justify-content: center;
 }
+
+@media only screen and (max-width: 40em) {
+	.top {
+		height: 3rem;
+	}
+
+	.container {
+		margin: 2.3rem 10%;
+	}
+	.paragraph-small {
+		font-size: 1rem;
+	}
+
+	.paragraph-medium {
+		font-size: 1.5rem;
+	}
+
+	.paragraph-big {
+		font-size: 1rem;
+	}
+
+	ul {
+		padding-left: 0;
+	}
+
+	ul li a {
+		font-size: 0.9rem;
+	}
+
+	.grid-layout {
+		grid-template-columns: repeat(1, 1fr);
+		-ms-grid-columns: repeat(1, 1fr);
+		gap: 1rem;
+	}
+}
+
+@media only screen and (min-width: 41em) and (max-width: 63em) {
+	.grid-layout {
+		grid-template-columns: repeat(2, 1fr);
+		-ms-grid-columns: repeat(2, 1fr);
+		gap: 1rem;
+	}
+}

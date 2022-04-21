@@ -14,9 +14,6 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,13 +26,13 @@ Users should be able to:
 
 ### Screenshot
 
-[./screenshots/screenshot1440.png]
-[./screenshots/screenshot375.png]
+![1440px Screen Size](./screenshots/screenshot1440.png) 
+<img src="./screenshots/screenshot375.png" width="275" />
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/CaptainKaveman/nftPreviewCard]
+- Live Site URL: [https://www.kylecor.win/projects/nftPreviewCard]
 
 ## My process
 
@@ -52,9 +49,13 @@ After the mobile design was completed I added in two media queries to create res
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+The most challenging part for me on this project was getting the view icon with a cyan background as a hover effect for the image. I was finally able to get it using the following code bellow. The first class sets the container size for my image. The next class creates my overlay which is the view image ontop of the cyan background. I created a variable in the root using an hsla for the cyan color provided by Frontend Mentor, the a(alpha) was then set to 0.5 to give the color some opacity. I set this class with an opacity of 0 so that it is hidden. I finally added a hover to the container class pointing to the overlay class to change the opacity to 1.
 
-To see how you can add code snippets, see below:
+```css
+.card-pic-container {
+	height: 330px;
+	width: 100%;
+}
 
 .overlay {
 	height: 100%;
@@ -66,39 +67,33 @@ To see how you can add code snippets, see below:
 	background-position: center;
 	cursor: pointer;
 	opacity: 0;
+	transition: 0.5s ease;
 }
 
 .card-pic-container:hover .overlay {
 	opacity: 1;
 }
+```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
+I had tried adding an inset box-shadow for the hover effect, but it also shadowed the view icon. Might be worth some more research to see if it is possible to use this method as well. The code I used in the class for the box-shadow is below.
 
-**Note: Delete this note and the content within this section and replace with your own learnings.**
+```css
+box-shadow: inset 0 0 0 100vmax var(--primary-clr-cyan-hover);
+```
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+In the future I would like to explore some better ways of styling the content. I used the inspect tool a few times and found that some of my CSS styling didn't actually change anything. Other areas to improve on are adding in more comments and better orgainizing the style sheet. Right now it is mainly organized by:
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Root > HTML Elements > Custom Classes (Top to bottom) > Footer > Media Queries 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [W3 Schools](https://www.w3schools.com) - This helped me understand some of the CSS styling. It was a big help on solving my overlay problem for the image hover.
+- [Kevin Powell](https://www.youtube.com/kepowob) - His videos are amazing and have really helped to understand a lot about CSS. He is also the reason I started with mobile first, which I felt was a lot easier.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
-
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- Website - [Kyle Corwin](https://www.kylecor.win)
+- Frontend Mentor - [@CaptainKaveman](https://www.frontendmentor.io/profile/CaptainKaveman)
+- Twitter - [@TheKyleCorwin](https://www.twitter.com/TheKyleCorwin)

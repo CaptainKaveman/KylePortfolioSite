@@ -69,8 +69,8 @@ hr {
 
 .card {
 	position: relative;
-	max-height: 90%;
-	width: 87%;
+	max-height: 50%;
+	width: 350px;
 	background-color: var(--main-cardbg-color);
 	border-radius: 15px;
 	padding: 1.4rem;
@@ -116,6 +116,7 @@ hr {
 }
 
 .grid {
+	display: -ms-grid;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	line-height: var(--md-space);
@@ -179,7 +180,7 @@ footer {
 }
 
 /* Responsiveness */
-@media only screen and (min-width: 60em) {
+@media only screen and (max-width: 60em) {
 	.card {
 		max-height: 80%;
 		width: 20%;
