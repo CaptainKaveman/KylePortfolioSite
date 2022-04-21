@@ -69,8 +69,8 @@ hr {
 
 .card {
 	position: relative;
-	max-height: 50%;
-	width: 350px;
+	max-height: 90%;
+	width: 87%;
 	background-color: var(--main-cardbg-color);
 	border-radius: 15px;
 	padding: 1.4rem;
@@ -180,10 +180,10 @@ footer {
 }
 
 /* Responsiveness */
-@media only screen and (max-width: 60em) {
+@media only screen and (min-width: 60em) {
 	.card {
 		max-height: 80%;
-		width: 20%;
+		width: 350px;
 	}
 
 	.header-font:hover {
@@ -192,7 +192,7 @@ footer {
 	}
 
 	.clock-icon {
-		margin-left: 40%;
+		margin-left: 35%;
 	}
 
 	a:hover {
