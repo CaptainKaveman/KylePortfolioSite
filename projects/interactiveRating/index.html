@@ -9,73 +9,79 @@
 			rel="icon"
 			type="image/png"
 			sizes="32x32"
-			href="./images/favicon-32x32.png"
+			href="./resources/images/favicon-32x32.png"
 		/>
-		<link rel="stylesheet" href="styles.css" />
+		<link rel="stylesheet" href="./resources/styles.css" />
+		<script src="./resources/app.js"></script>
 
 		<title>Frontend Mentor | Interactive rating component</title>
 	</head>
-	<body>
-		<!-- Rating state start -->
-		<!-- <div class="card">
-			<div class="star"><img src="./images/icon-star.svg" alt="" /></div>
-			<div class="content">
-				<h1>How did we do?</h1>
-				<p>
-					Please let us know how we did with your support request. All feedback
-					is appreciated to help us improve our offering!
-				</p>
+	<body onload="reset();">
+		<header></header>
+		<nav></nav>
+		<main>
+			<div id="card1" class="card">
+				<div class="star">
+					<img src="./resources/images/icon-star.svg" alt="" />
+				</div>
+				<div class="content">
+					<h1>How did we do?</h1>
+					<p>
+						Please let us know how we did with your support request. All
+						feedback is appreciated to help us improve our offering!
+					</p>
+				</div>
+				<ul class="rating-system">
+					<li>
+						<input type="radio" name="rating" id="1" value="1" />
+						<label for="1">1</label>
+					</li>
+					<li>
+						<input type="radio" name="rating" id="2" value="2" />
+						<label for="2">2</label>
+					</li>
+					<li>
+						<input type="radio" name="rating" id="3" value="3" />
+						<label for="3">3</label>
+					</li>
+					<li>
+						<input type="radio" name="rating" id="4" value="4" />
+						<label for="4">4</label>
+					</li>
+					<li>
+						<input type="radio" name="rating" id="5" value="5" />
+						<label for="5">5</label>
+					</li>
+				</ul>
+				<div class="submit">
+					<button type="submit" onclick="results();">Submit</button>
+				</div>
 			</div>
-			<ul class="rating-system">
-				<li>
-					<input type="radio" name="rating" id="1" />
-					<label for="1">1</label>
-				</li>
-				<li>
-					<input type="radio" name="rating" id="2" />
-					<label for="2">2</label>
-				</li>
-				<li>
-					<input type="radio" name="rating" id="3" />
-					<label for="3">3</label>
-				</li>
-				<li>
-					<input type="radio" name="rating" id="4" />
-					<label for="4">4</label>
-				</li>
-				<li>
-					<input type="radio" name="rating" id="5" />
-					<label for="5">5</label>
-				</li>
-			</ul>
-			<div class="submit"><button type="submit">Submit</button></div>
-		</div> -->
-
-		<!-- Rating state end -->
-
-		<!-- Thank you state start -->
-		<div class="card">
-			<div class="thanks-image">
-				<img src="./images/illustration-thank-you.svg" alt="thank you" />
+			<div id="card2" class="card hidden">
+				<div class="thanks-image">
+					<img
+						src="./resources/images/illustration-thank-you.svg"
+						alt="thank you"
+					/>
+				</div>
+				<div class="selection">You selected <span>0</span> out of 5</div>
+				<div class="thanks-content">
+					<h1>Thank you!</h1>
+					<p>
+						We appreciate you taking the time to give a rating. If you ever need
+						more support, don't hesitate to get in touch!
+					</p>
+				</div>
 			</div>
-			<div class="selection">You selected <code></code> out of 5</div>
-			<!-- Add rating here -->
-			<div class="thanks-content">
-				<h1>Thank you!</h1>
-				<p>
-					We appreciate you taking the time to give a rating. If you ever need
-					more support, don't hesitate to get in touch!
-				</p>
-			</div>
-		</div>
-
-		<!-- Thank you state end -->
-
+		</main>
 		<footer>
 			<div class="attribution">
 				<div>
 					Challenge by
-					<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+					<a
+						href="https://www.frontendmentor.io?ref=challenge"
+						target="_blank"
+						rel="noopener noreferrer"
 						>Frontend Mentor</a
 					>. Coded by <a href="https://www.kylecor.win/">Kyle Corwin</a>.
 				</div>

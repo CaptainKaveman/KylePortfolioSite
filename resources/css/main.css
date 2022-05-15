@@ -175,7 +175,8 @@ a.invisible-link {
 }
 
 .work-image.work-3 {
-	background: url(/resources/images/projects/pac-man-js.png) center / cover;
+	background: url(/projects/interactiveRating/resources/images/screenshots/interactive_rating_screenshot_1440.png)
+		center / 160% no-repeat;
 }
 
 .work-image.work-4 {
@@ -191,8 +192,7 @@ a.invisible-link {
 }
 
 .work-image.work-6 {
-	background: linear-gradient(#e66465, #9198e5);
-	background-size: cover;
+	background: url(/resources/images/projects/pac-man-js.png) center / cover;
 }
 
 /* Footer Navigation */
