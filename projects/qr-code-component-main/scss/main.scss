@@ -1,0 +1,101 @@
+// Typography
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+$ff: 'Outfit',
+sans-serif;
+$fw-r: 400;
+$fw-b: 700;
+
+// Colors
+$white: hsl(0 0% 100%);
+$lightGray: hsl(212 45% 89%);
+$grayBlue: hsl(220 15% 55%);
+$darkBlue: hsl(218 44% 22%);
+// Footer colors
+$red: hsl(360 100% 45%);
+$purple: hsl(289 60% 45%);
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: $lightGray;
+  font-family: $ff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 75%;
+  padding: 1em;
+  background-color: $white;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 45px rgba($grayBlue, .25);
+}
+
+.qr-img {
+  border-radius: 10px;
+}
+
+.title {
+  color: $darkBlue;
+  font-size: 1.4rem;
+  padding: .3em .5em 0;
+}
+
+.subtitle {
+  color: $grayBlue;
+  padding: 0 .75em;
+  margin: 0 auto 1.5em;
+}
+
+
+footer {
+  position: absolute;
+
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+
+  a {
+    color: $red;
+
+    &:first-of-type {
+      color: $purple;
+
+      &:hover {
+        color: $red;
+      }
+    }
+
+    &:hover {
+      color: $purple;
+    }
+  }
+
+}
+
+@media (min-width: 400px) {
+  .card {
+    max-width: 300px;
+    box-shadow: 0 10px 45px rgba($grayBlue, .5);
+  }
+
+  footer {
+    bottom: 20px;
+  }
+}

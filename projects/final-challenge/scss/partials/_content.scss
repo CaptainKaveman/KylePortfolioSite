@@ -1,0 +1,38 @@
+.content {
+	margin-top: 10em;
+	margin-bottom: 6em;
+}
+
+.content__main {
+	width: 60%;
+}
+
+.content__main--title {
+	margin-top: 0;
+	font-size: 2.25rem;
+}
+
+.content__main--text {
+	margin-bottom: 3em;
+	font-size: 1.3125rem;
+}
+
+.content__aside {
+	width: 30%;
+	text-align: center;
+
+	@include row($justify: flex-start, $flex-dir: column);
+	gap: 1em;
+}
+
+.content__aside--text {
+	padding: 0.5em 3em;
+	background-color: $darkBlue;
+	color: $white;
+	font-size: 1.125rem;
+}
+
+.content__aside--title {
+	color: $white;
+	font-size: 1.875rem;
+}

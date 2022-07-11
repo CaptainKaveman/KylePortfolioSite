@@ -1,0 +1,42 @@
+footer {
+	padding: 2em 0;
+	background-color: $darkBlue;
+
+	h2 {
+		font-size: 1.3125rem;
+	}
+
+	p {
+		color: $white;
+		font-size: 1rem;
+	}
+
+	a {
+		color: $white;
+		font-size: 1rem;
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			opacity: 0.75;
+		}
+	}
+}
+
+.footer__title {
+	font-size: 1.25rem;
+	text-align: center;
+}
+
+.about {
+	width: 40%;
+}
+
+.footer__nav {
+	width: 50%;
+	@include row($flex-dir: row);
+}
+
+.footer__link {
+	padding-bottom: 1.5em;
+}

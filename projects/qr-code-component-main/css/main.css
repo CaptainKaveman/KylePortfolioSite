@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: hsl(212deg, 45%, 89%);
+  font-family: "Outfit", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 75%;
+  padding: 1em;
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 45px rgba(123, 135, 157, 0.25);
+}
+
+.qr-img {
+  border-radius: 10px;
+}
+
+.title {
+  color: hsl(218deg, 44%, 22%);
+  font-size: 1.4rem;
+  padding: 0.3em 0.5em 0;
+}
+
+.subtitle {
+  color: hsl(220deg, 15%, 55%);
+  padding: 0 0.75em;
+  margin: 0 auto 1.5em;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(0deg, 100%, 45%);
+}
+.attribution a:first-of-type {
+  color: hsl(289deg, 60%, 45%);
+}
+.attribution a:first-of-type:hover {
+  color: hsl(0deg, 100%, 45%);
+}
+.attribution a:hover {
+  color: hsl(289deg, 60%, 45%);
+}
+
+@media (min-width: 400px) {
+  .card {
+    max-width: 300px;
+    box-shadow: 0 10px 45px rgba(123, 135, 157, 0.5);
+  }
+
+  footer {
+    bottom: 20px;
+  }
+}/*# sourceMappingURL=main.css.map */

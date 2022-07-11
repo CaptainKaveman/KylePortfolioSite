@@ -19,25 +19,22 @@
             <span class="header-name">Will Smith
                 <div class="header-bday">Born: September 25<sup>th</sup> 1968 (age <span id="age"></span> years.)</div>
             </span>
-            <!-- <img class="will-header" src="" alt=""> -->
         </div>
                     <script>
-                        const yearBorn = 1968;
+                        let yearBorn = 1968;
                         let currentYear = new Date().getFullYear();
                         let currentMonth = new Date().getMonth() + 1;
                         let currentDay = new Date().getDate();
                         let currentAge;
 
-                        if (currentMonth > 9) {
-                            currentAge = currentYear - yearBorn;
-                        } else if (currentMonth < 9) {
-                            currentAge = currentYear - yearBorn -1;
-                        } else if (currentDay < 25) {
-                            currentAge = currentYear - yearBorn -1;
-                        } else {
-                            currentAge = currentYear - yearBorn;
+                        if (currentMonth <= 9) {
+                        currentAge = currentYear - yearBorn - 1;
+                        	if (currentDay < 25) {
+                            currentAge = currentYear - yearBorn - 1;
+                            } else {
+                              currentAge = currentYear - yearBorn;
+                            }
                         }
-
                         document.getElementById("age").innerHTML = currentAge;
                     </script>
     </header>
@@ -45,13 +42,7 @@
     <nav class="navbar">
         <ul>
             <li><a href="#about">About</a></li>
-            <div class="dropdown">
-                <button class="dropbutton">Awards</button>
-                    <div class="dropdown-content">
-                        <a href="#music">Music</a>
-                        <a href="#film">Film</a>
-                    </div>
-            </div>
+            <li><a href="#awards">Awards</a></li>
             <li><a href="#funfacts">Fun Facts</a></li>
         </ul>
 
@@ -84,7 +75,7 @@
         </ul>
 
         <!-- Accolades Section -->
-        <a id="music"></a>
+        <a id="awards"></a>
         <h1 id="banner">Awards</h1>
         
         <span class="award-headers">Music</span>    
@@ -190,7 +181,6 @@
         </div>
         <br>
         
-        <a id="film"></a>
         <span class="award-headers">Film</span>
         <hr>
         

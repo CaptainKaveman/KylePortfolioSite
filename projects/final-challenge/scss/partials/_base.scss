@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+h1,
+h2 {
+	font-family: $ff-b;
+	color: $gold;
+}
+
+p {
+	font-family: $ff-r;
+	line-height: 1.5;
+}
+
+a {
+	display: inline-block;
+}
+
+.white {
+	color: $white;
+}
+
+.container {
+	@include container;
+}

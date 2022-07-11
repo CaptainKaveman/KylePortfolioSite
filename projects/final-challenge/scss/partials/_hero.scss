@@ -1,0 +1,33 @@
+.hero {
+	background-color: $mdDarkBlue;
+	padding: 4em 0 0;
+}
+
+.hero__title {
+	width: 45%;
+	font-size: 5.625rem;
+	line-height: 1;
+}
+
+.hero__text {
+	width: 50%;
+	padding: 10em 0;
+	color: $white;
+	font-size: 1.5rem;
+
+	.btn {
+		padding: 0.2em 1.5em;
+		background-color: $gold;
+		color: $white;
+		border-radius: 100px;
+		font-size: 1.5rem;
+		font-family: $ff-b;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		&:hover {
+			opacity: 0.75;
+		}
+	}
+}

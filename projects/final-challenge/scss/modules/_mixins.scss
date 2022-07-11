@@ -1,0 +1,12 @@
+@mixin container($width: 90%, $max-width: 75em) {
+	margin: 0 auto;
+	width: $width;
+	max-width: $max-width;
+	position: relative;
+}
+
+@mixin row($display: flex, $justify: space-between, $flex-dir: row) {
+	display: $display;
+	justify-content: $justify;
+	flex-direction: $flex-dir;
+}
