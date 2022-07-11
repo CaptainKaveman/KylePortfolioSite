@@ -1,0 +1,25 @@
+.portfolio-item-individual {
+  padding: 0 2em 5em;
+  max-width: 1000px;
+  margin: 0 auto;
+  // text-align: center;
+
+  p {
+    margin-top: -5em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.repository-link {
+  text-align: center;
+  padding: 1em 0 2.5em;
+
+  a {
+    text-decoration: none;
+    padding: .5em 1em;
+    background-color: $blk500;
+    color: $accent100;
+  }
+}

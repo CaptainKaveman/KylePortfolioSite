@@ -1,0 +1,52 @@
+.about-me {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3em 0 5em;
+
+  img {
+    margin: 0 auto;
+    @include box-shadow($b-s);
+    position: relative;
+    z-index: 2;
+  }
+}
+
+.about-me__subtitle {
+  padding: 0.5em 1em;
+  background-color: $accent100;
+  color: $bluegreen;
+}
+
+@media (min-width: 700px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    column-gap: 2em;
+  }
+  .about-me__title {
+    grid-area: title;
+  }
+  .about-me__subtitle {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: 0.5em;
+    width: calc(100% + 1em);
+    padding-left: 1em;
+    padding-right: calc(200px + 10em);
+    font-size: var(--fs-h3);
+    text-align: center;
+  }
+  .about-me__img {
+    grid-area: img;
+  }
+  .about-me__body {
+    text-align: left;
+  }
+}

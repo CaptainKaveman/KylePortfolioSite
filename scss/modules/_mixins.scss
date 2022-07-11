@@ -1,0 +1,18 @@
+$b-s: 0.25em 0.25em 0.75em rgba($blk900, 0.5),
+  0.125em 0.125em 0.25em rgba($blk900, 0.25);
+
+@mixin box-shadow($param) {
+  box-shadow: $param;
+}
+
+@mixin flex(
+  $display: flex,
+  $flex-dir: column,
+  $justify: space-between,
+  $align: center
+) {
+  display: $display;
+  flex-direction: $flex-dir;
+  justify-content: $justify;
+  align-items: $align;
+}
