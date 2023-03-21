@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         pacDotEaten()
         powerPelletEaten()
-        checkForGameOver()
+        checkGameOver()
         checkForWin()
 
     }
