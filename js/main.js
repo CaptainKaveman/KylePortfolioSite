@@ -13,3 +13,18 @@ navLinks.forEach((link) => {
     document.body.classList.remove("nav-open");
   });
 });
+
+
+let yearBorn = 1989;
+let currentYear = new Date().getFullYear();
+let currentMonth = new Date().getMonth() + 1;
+//let currentDay = new Date().getDate();
+let currentAge;
+
+if (currentMonth < 8) {
+  currentAge = currentYear - yearBorn - 1
+} else {
+  currentAge = currentYear - yearBorn
+}
+
+document.getElementById("age").innerHTML = currentAge;
