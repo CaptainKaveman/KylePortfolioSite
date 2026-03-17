@@ -39,5 +39,6 @@ function buildRich(rawData, monthYear) {
         XLSX.utils.book_append_sheet(wb, ws, sheetDef.name);
     }
 
-    XLSX.writeFile(wb, `Rich N2 Report ${monthYear}.xlsx`);
+    const richFileName = `${extractMonthNumber(rawData.bindleyList[0].timestamp)} - Raw N2 Report ${monthYear}.xlsx`;
+    XLSX.writeFile(wb, richFileName);
 };
