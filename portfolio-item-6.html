@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <script src="https://kit.fontawesome.com/bf3808b761.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/main.css" />
 
   <!-- ****** faviconit.com favicons ****** -->
@@ -65,24 +64,21 @@
   <!-- Intro -->
   <section class="intro">
     <div class="intro__title">
-      <h1>The title <span>of my project</span></h1>
-      <p class="intro__subtitle">A short subtitle</p>
+      <h1>Desigo <span>Report Uploader</span></h1>
+      <p class="intro__subtitle">Browser-Based Excel Report Tool</p>
       <img src="./img/kyle_smiling.jpg" alt="Kyle Corwin smiling" class="intro__img" />
     </div>
   </section>
 
   <div class="portfolio-item-individual">
     <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quidem
-      ad eligendi placeat, perspiciatis dolorem veniam obcaecati modi. Nihil
-      alias quisquam laboriosam dicta tempore laborum iure nemo tempora
-      similique placeat?
+      The Desigo Report Uploader is a browser-based tool built for the Birck Nanotechnology Center at Purdue University to streamline a recurring monthly workflow. Previously, generating nitrogen usage reports required running a Python desktop application and manually reformatting the output. This tool replaces that process entirely in the browser with no installation required. Built with vanilla JavaScript and the SheetJS library, it accepts a Desigo-exported Excel file via drag and drop or file browse, validates the workbook structure, extracts and processes data across three sheets, and automatically generates two formatted Excel output files — a Bindley N2 Report and a Raw N2 Report — ready for submission. Key features include client-side file processing with no data ever leaving the browser, input validation with descriptive error messaging, and a clean interface designed for non-technical users.
     </p>
     <div class="repository-link">
-      <a href="https://github.com/CaptainKaveman/#" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
+      <a href="https://github.com/CaptainKaveman/desigo-report-uploader-browser" target="_blank" rel="noopener noreferrer">GitHub Repository</a>
     </div>
-    <a href="#">
-      <img src="#" alt="#" />
+    <a href="./projects/desigo-report-uploader/" target="_blank" rel="noopener noreferrer">
+      <img src="./img/projects/desigo-report-uploader.png" alt="desigo report uploder to format and download excel report" />
     </a>
   </div>
 
@@ -94,30 +90,30 @@
     <ul class="social-list">
       <li class="social-list__item">
         <a href="https://github.com/CaptainKaveman" class="social-list__link">
-          <span class="sr-only">some text that relates to your link</span>
-          <i class="fab fa-github"></i>
+          <span class="sr-only">link to my GitHub profile</span>
+          <i class="fa-brands fa-github"></i>
         </a>
       </li>
       <li class="social-list__item">
         <a href="https://www.linkedin.com/in/kylecorwin/" class="social-list__link">
-          <span class="sr-only">some text that relates to your link</span>
-          <i class="fab fa-linkedin"></i>
+          <span class="sr-only">link to my LinkedIn page</span>
+          <i class="fa-brands fa-linkedin"></i>
         </a>
       </li>
       <li class="social-list__item">
         <a href="https://twitter.com/TheKyleCorwin" class="social-list__link">
-          <span class="sr-only">some text that relates to your link</span>
-          <i class="fab fa-twitter"></i>
+          <span class="sr-only">Link to my X page</span>
+          <i class="fa-brands fa-x-twitter"></i>
         </a>
       </li>
       <li class="social-list__item">
         <a href="https://codepen.io/captainkaveman" class="social-list__link">
-          <span class="sr-only">some text that relates to your link</span>
-          <i class="fab fa-codepen"></i>
+          <span class="sr-only">Link to my codepens</span>
+          <i class="fa-brands fa-codepen"></i>
         </a>
       </li>
     </ul>
-    <p class="copyright">Copyright 2022 Kyle Corwin</p>
+    <p class="copyright">Copyright 2022-<span id="copyrightYear"></span> Kyle Corwin</p>
   </footer>
 
   <script src="./js/main.js"></script>

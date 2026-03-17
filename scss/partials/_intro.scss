@@ -43,10 +43,13 @@
   .intro {
     margin-bottom: 10em;
   }
+}
 
+@media (min-width: 800px) {
   .intro__title {
     display: grid;
     width: min-content;
+    max-width: 850px;
     margin: 0 auto;
     gap: 1em;
     grid-template-areas:
@@ -76,7 +79,7 @@
     grid-column: -1 / 1;
     grid-row: 2;
     position: relative;
-    left: -1.5em;
+    left: -0.25em;
     width: calc(100% + 1.5em);
     margin: 0;
   }

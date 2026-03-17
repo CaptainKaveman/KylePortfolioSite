@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/styles.css">
+        <title>Desigo Report Uploader</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Desigo Report Uploader</h1>
+            <p>Upload your Desigo report to generate the two output reports.</p>
+
+            <div id="dropZone" class="drop-zone">
+                <p>Drop Excel file here, or</p>
+                <label for="fileInput" class="btn">Choose Excel File</label>
+                <input type="file" id="fileInput" accept=".xlsx">
+            </div>
+            <p id="statusLabel" hidden></p>
+            <button id="generateButton" class="btn" hidden>Generate Report</button>
+        </div>
+        
+        <script type="text/javascript" src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+        <script src="./js/utils.js"></script>
+        <script src="./js/validators.js"></script>
+        <script src="./js/file-reader.js"></script>
+        <script src="./js/build-bindley.js"></script>
+        <script src="./js/build-rich.js"></script>
+        <script src="./js/drop-zone.js"></script>
+        <script src="./js/main.js"></script>
+    </body>
+</html>

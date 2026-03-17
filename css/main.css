@@ -25,8 +25,8 @@ html {
 }
 
 body {
-  background-color: hsl(0deg, 0%, 100%);
-  color: hsl(0deg, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
   font-size: var(--fs-body);
@@ -58,8 +58,20 @@ h3 {
 }
 
 :focus {
-  outline: 3px solid hsl(170deg, 82%, 48%);
+  outline: 3px solid hsl(170, 82%, 48%);
   outline-offset: 3px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 header {
@@ -78,8 +90,8 @@ header {
 
 .nav {
   position: fixed;
-  background-color: hsl(0deg, 0%, 8%);
-  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 100%);
   top: 0;
   left: 0;
   right: 0;
@@ -108,7 +120,7 @@ header {
   text-decoration: none;
 }
 .nav__link:hover {
-  color: hsl(169deg, 82%, 45%);
+  color: hsl(169, 82%, 45%);
 }
 
 .nav-toggle {
@@ -134,11 +146,11 @@ header {
   transform: rotate(0.625turn);
 }
 .nav-open .hamburger::before {
-  background-color: hsl(169deg, 82%, 45%);
+  background-color: hsl(169, 82%, 45%);
   transform: rotate(90deg) translateX(6px);
 }
 .nav-open .hamburger::after {
-  background-color: hsl(169deg, 82%, 45%);
+  background-color: hsl(169, 82%, 45%);
 }
 
 .hamburger {
@@ -152,7 +164,7 @@ header {
   border-radius: 1em;
   left: 1;
   right: 0;
-  background-color: hsl(0deg, 0%, 8%);
+  background-color: hsl(0, 0%, 8%);
   transition: transform 250ms ease-in-out;
 }
 .hamburger::before {
@@ -192,8 +204,8 @@ header {
   width: 90%;
   margin: 0 auto 1em;
   padding: 0.3em 1em;
-  background-color: hsl(169deg, 82%, 45%);
-  color: hsl(170deg, 46%, 20%);
+  background-color: hsl(169, 82%, 45%);
+  color: hsl(170, 46%, 20%);
   font-size: 1.7rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -204,14 +216,16 @@ header {
   h1 {
     margin: auto;
   }
-
   .intro {
     margin-bottom: 10em;
   }
-
+}
+@media (min-width: 800px) {
   .intro__title {
     display: grid;
+    width: -moz-min-content;
     width: min-content;
+    max-width: 850px;
     margin: 0 auto;
     gap: 1em;
     grid-template-areas: "img title" "img subtitle";
@@ -224,35 +238,33 @@ header {
   .intro__title img {
     margin: 0;
   }
-
   .intro__img {
     grid-area: img;
     min-width: 250px;
     position: relative;
   }
-
   .intro__subtitle {
     text-align: right;
     align-self: start;
     grid-column: -1/1;
     grid-row: 2;
     position: relative;
-    left: -1.5em;
+    left: -0.25em;
     width: calc(100% + 1.5em);
     margin: 0;
   }
 }
 .services {
   padding: 4em 0 6em;
-  background-color: hsl(0deg, 0%, 19%);
+  background-color: hsl(0, 0%, 19%);
   background-image: url(../../img/services-bg.jpg);
   background-size: cover;
   background-blend-mode: soft-light;
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   text-align: center;
 }
 .services h2 {
-  color: hsl(170deg, 82%, 48%);
+  color: hsl(170, 82%, 48%);
   font-size: var(--fs-h1);
 }
 .services h2::after {
@@ -261,7 +273,7 @@ header {
   width: 2em;
   height: 1px;
   margin: 0.7em auto 0.5em;
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
   opacity: 0.25;
 }
 
@@ -282,8 +294,8 @@ header {
 .btn {
   display: inline-block;
   padding: 0.75em 3.5em;
-  background-color: hsl(169deg, 82%, 45%);
-  color: hsl(0deg, 0%, 18%);
+  background-color: hsl(169, 82%, 45%);
+  color: hsl(0, 0%, 18%);
   text-transform: uppercase;
   text-decoration: none;
   font-weight: 900;
@@ -302,7 +314,6 @@ header {
   .service:last-of-type {
     padding-bottom: 1em;
   }
-
   .flex {
     width: 80%;
     max-width: 1200px;
@@ -329,8 +340,8 @@ header {
 
 .about-me__subtitle {
   padding: 0.5em 1em;
-  background-color: hsl(170deg, 82%, 48%);
-  color: hsl(170deg, 46%, 20%);
+  background-color: hsl(170, 82%, 48%);
+  color: hsl(170, 46%, 20%);
 }
 
 @media (min-width: 700px) {
@@ -338,13 +349,12 @@ header {
     display: grid;
     grid-template-columns: 1fr 300px;
     grid-template-areas: "title img" "subtitle img" "text img";
-    column-gap: 2em;
+    -moz-column-gap: 2em;
+         column-gap: 2em;
   }
-
   .about-me__title {
     grid-area: title;
   }
-
   .about-me__subtitle {
     grid-column: 1/-1;
     grid-row: 2;
@@ -356,29 +366,27 @@ header {
     font-size: var(--fs-h3);
     text-align: center;
   }
-
   .about-me__img {
     grid-area: img;
   }
-
   .about-me__body {
     text-align: left;
   }
 }
 .my-work {
   padding: 4em 0 5em;
-  background-color: hsl(0deg, 0%, 18%);
+  background-color: hsl(0, 0%, 18%);
   text-align: center;
 }
 
 .my-work__title {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
   font-size: var(--fs-h1);
 }
 
 .my-work__subtitle {
   margin-bottom: 2em;
-  color: hsl(170deg, 82%, 48%);
+  color: hsl(170, 82%, 48%);
   font-size: var(--fs-h3);
   font-weight: 900;
 }
@@ -393,7 +401,7 @@ header {
 }
 
 .portfolio__item {
-  background-color: hsl(170deg, 82%, 48%);
+  background-color: hsl(170, 82%, 48%);
   overflow: hidden;
 }
 .portfolio__item img {
@@ -407,8 +415,8 @@ header {
 
 footer {
   padding: 4em 0;
-  background-color: hsl(0deg, 0%, 8%);
-  color: hsl(170deg, 82%, 48%);
+  background-color: hsl(0, 0%, 8%);
+  color: hsl(170, 82%, 48%);
   text-align: center;
   font-size: var(--fs-h3);
 }
@@ -449,7 +457,7 @@ footer p {
   display: block;
   height: 1px;
   width: 25%;
-  background-color: rgba(22, 223, 189, 0.15);
+  background-color: rgba(22.032, 222.768, 189.312, 0.15);
   margin: 1em auto 3em;
 }
 
@@ -472,6 +480,6 @@ footer p {
 .repository-link a {
   text-decoration: none;
   padding: 0.5em 1em;
-  background-color: hsl(0deg, 0%, 20%);
-  color: hsl(170deg, 82%, 48%);
+  background-color: hsl(0, 0%, 20%);
+  color: hsl(170, 82%, 48%);
 }/*# sourceMappingURL=main.css.map */

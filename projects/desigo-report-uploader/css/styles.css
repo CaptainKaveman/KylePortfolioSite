@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@100..800&display=swap');
+
+:root {
+    /* Color variables */
+    --dust-grey: hsl(77, 9%, 84%);
+    --soft-linen: hsl(69, 21%, 94%);
+    --muted-teal: hsl(122, 20%, 70%);
+    --charcoal: hsl(60, 1%, 29%);
+    --success-color: hsl(120, 100%, 40%);
+    --error-color: hsl(0, 100%, 50%);
+
+    /* Font variables */
+    --font-family: 'JetBrains Mono', monospace;
+    --fw-s: 200;
+    --fw-m: 500;
+    --fw-l: 700;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--dust-grey);
+    font-family: var(--font-family);
+    font-size: var(--fs-body);
+    color: var(--charcoal);
+    /* line-height: 1.6; */
+}
+
+h1, h2, h3 {
+    margin: 0;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}   
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+[hidden] {
+    display: none !important;
+}
+
+button, input, select, textarea {
+    font: inherit;
+    color: inherit;
+    letter-spacing: inherit;
+}
+
+.container {
+    width: 90%;
+    min-width: 850px;
+    max-width: 1200px;
+    height: 100vh;
+    margin: 0 auto;
+    padding: 2rem;
+    place-content: center;
+    display: grid;
+}
+
+.container > p {
+    margin-bottom: 1.5rem;
+}
+
+.drop-zone {
+    margin: 1.25rem auto;
+    background-color: var(--soft-linen);
+    border: .15rem dashed var(--muted-teal);
+    height: 15em;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.btn {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--muted-teal);
+    color: var(--charcoal);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: var(--fw-m);
+    width: 15rem;
+    text-align: center;
+    font-size: var(--fs-body);
+}
+
+label.btn {
+    display: inline-block;
+}
+
+input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    display: none;
+}
+
+#statusLabel {
+    max-width: 600px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.success {
+    color: var(--success-color);
+}
+
+.error {
+    color: var(--error-color);
+}
