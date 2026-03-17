@@ -1,0 +1,4 @@
+[[plugins]]
+  package = "netlify-plugin-a11y"
+  [plugins.inputs]
+    timeout = 60000
