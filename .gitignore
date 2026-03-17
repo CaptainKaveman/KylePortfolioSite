@@ -1,0 +1,13 @@
+# Windows system files
+Thumbs.db
+desktop.ini
+
+# Mac system files
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Sass cache
+.sass-cache/
+*.css.map
