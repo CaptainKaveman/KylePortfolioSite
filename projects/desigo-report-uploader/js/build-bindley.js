@@ -18,8 +18,8 @@ function buildBindleyFile(rawData, monthYear) {
             t: 'd', 
             v: bindleyList[i].timestamp,
             z: 'm/d/yyyy h:mm'};
-        ws[encodeCell(excelRow, 1)] = {t: 'n', v: bindleyList[i].value};
-        ws[encodeCell(excelRow, 2)] = {t: 'n', v: mainTankList[i].value};
+        ws[encodeCell(excelRow, 1)] = {t: 'n', v: bindleyList[i].value, z: '0.00'};
+        ws[encodeCell(excelRow, 2)] = {t: 'n', v: mainTankList[i].value, z: '0.00'};
     }
 
     // --- Average row ---

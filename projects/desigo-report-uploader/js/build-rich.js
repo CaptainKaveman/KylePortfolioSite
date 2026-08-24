@@ -23,7 +23,7 @@ function buildRich(rawData, monthYear) {
                 t: 'd', 
                 v: sheetDef.dataKey[i].timestamp,
                 z: 'm/d/yyyy h:mm'};
-            ws[encodeCell(excelRow, 1)] = {t: 'n', v: sheetDef.dataKey[i].value};
+            ws[encodeCell(excelRow, 1)] = {t: 'n', v: sheetDef.dataKey[i].value, z: '0.00'};
         }
 
         ws['!ref'] = XLSX.utils.encode_range({
