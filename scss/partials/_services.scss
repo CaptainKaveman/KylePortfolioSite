@@ -68,6 +68,6 @@
     width: 80%;
     max-width: 1200px;
     margin: 0 auto 2em;
-    @include flex($flex-dir: row);
+    @include flex($flex-dir: row, $align: stretch);
   }
 }
