@@ -5,7 +5,17 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
-## [2.1.0] - 2026-08-25
+### Added
+- (planned) Centered column alignment and thick borders on the summary
+  rows, ported from the manually-styled July reference file.
+
+### Changed
+- (planned) Swap the write side (`build-bindley.js`, `build-rich.js`) from
+  SheetJS to ExcelJS to support cell styling (alignment, borders) on
+  output, since SheetJS's community build does not write cell styles.
+  Read side (`file-reader.js`, `validators.js`) is unaffected.
+
+## [2.0.1] - 2026-08-25
 
 ### Fixed
 - Data rows in the output files (Bindley, Main Tank, HP Line columns) were
@@ -21,16 +31,6 @@ Format loosely follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   report month's DST status differs from whenever the page happened to
   load. Fix: convert dates to a raw Excel serial number using only local
   calendar fields (never `getTime()`/`getTimezoneOffset()`) before writing.
-
-### Added
-- (planned) Centered column alignment and thick borders on the summary
-  rows, ported from the manually-styled July reference file.
-
-### Changed
-- (planned) Swap the write side (`build-bindley.js`, `build-rich.js`) from
-  SheetJS to ExcelJS to support cell styling (alignment, borders) on
-  output, since SheetJS's community build does not write cell styles.
-  Read side (`file-reader.js`, `validators.js`) is unaffected.
 
 ---
 
