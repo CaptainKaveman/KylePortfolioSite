@@ -20,8 +20,8 @@ function buildRich(rawData, monthYear) {
         for (let i = 0; i < dataCount; i++) {
             const excelRow = i + 1;
             ws[encodeCell(excelRow, 0)] = {
-                t: 'd', 
-                v: sheetDef.dataKey[i].timestamp,
+                t: 'n', 
+                v: localDatetoSerial(sheetDef.dataKey[i].timestamp),
                 z: 'm/d/yyyy h:mm'};
             ws[encodeCell(excelRow, 1)] = {t: 'n', v: sheetDef.dataKey[i].value, z: '0.00'};
         }

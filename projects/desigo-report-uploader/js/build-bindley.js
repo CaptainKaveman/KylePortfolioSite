@@ -12,11 +12,12 @@ function buildBindleyFile(rawData, monthYear) {
     ws[encodeCell(0, 1)] = {t: 's', v:'Bindley'};
     ws[encodeCell(0, 2)] = {t: 's', v:'Main Tank'};
 
+    // Data rows
     for (let i = 0; i < dataCount; i++) {
         const excelRow = i + 1;
         ws[encodeCell(excelRow, 0)] = {
-            t: 'd', 
-            v: bindleyList[i].timestamp,
+            t: 'n', 
+            v: localDatetoSerial(bindleyList[i].timestamp),
             z: 'm/d/yyyy h:mm'};
         ws[encodeCell(excelRow, 1)] = {t: 'n', v: bindleyList[i].value, z: '0.00'};
         ws[encodeCell(excelRow, 2)] = {t: 'n', v: mainTankList[i].value, z: '0.00'};
